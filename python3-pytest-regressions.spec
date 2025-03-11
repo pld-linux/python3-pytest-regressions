@@ -7,7 +7,7 @@ Summary:	Easy to use fixtures to write regression tests
 Summary(pl.UTF-8):	Łatwe w użyciu wyposażenie do tworzenia testów regresji
 Name:		python3-pytest-regressions
 Version:	2.4.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pytest-regressions/
