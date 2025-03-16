@@ -16,12 +16,14 @@ Source0:	https://files.pythonhosted.org/packages/source/p/pytest-regressions/pyt
 URL:		https://pypi.org/project/pytest-regressions/
 BuildRequires:	python3-modules >= 1:3.6
 BuildRequires:	python3-setuptools
+BuildRequires:	python3-setuptools_scm
 %if %{with tests}
 BuildRequires:	python3-PyYAML
+BuildRequires:	python3-matplotlib
 BuildRequires:	python3-pandas
-BuildRequires:	python3-pytest >= 3.5.0
+BuildRequires:	python3-pillow
+BuildRequires:	python3-pytest >= 6.2.0
 BuildRequires:	python3-pytest-datadir >= 1.2.0
-BuildRequires:	python3-six
 %endif
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
