@@ -6,13 +6,13 @@
 Summary:	Easy to use fixtures to write regression tests
 Summary(pl.UTF-8):	Łatwe w użyciu wyposażenie do tworzenia testów regresji
 Name:		python3-pytest-regressions
-Version:	2.4.1
-Release:	3
+Version:	2.7.0
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pytest-regressions/
-Source0:	https://files.pythonhosted.org/packages/source/p/pytest-regressions/pytest-regressions-%{version}.tar.gz
-# Source0-md5:	2e82a7d4701656b2fc35f8d08069543f
+Source0:	https://files.pythonhosted.org/packages/source/p/pytest-regressions/pytest_regressions-%{version}.tar.gz
+# Source0-md5:	af3e931f1d51520e0396a15cacb78f0b
 URL:		https://pypi.org/project/pytest-regressions/
 BuildRequires:	python3-modules >= 1:3.6
 BuildRequires:	python3-setuptools
@@ -59,7 +59,7 @@ API documentation for Python pytest-regressions module.
 Dokumentacja API modułu Pythona pytest-regressions.
 
 %prep
-%setup -q -n pytest-regressions-%{version}
+%setup -q -n pytest_regressions-%{version}
 
 # fail because of numpy DeprecationWarnings
 %{__mv} tests/test_dataframe_regression.py tests/disabled_dataframe_regression.py
