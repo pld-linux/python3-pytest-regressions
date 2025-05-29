@@ -14,14 +14,17 @@ Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/p/pytest-regressions/pytest_regressions-%{version}.tar.gz
 # Source0-md5:	af3e931f1d51520e0396a15cacb78f0b
 URL:		https://pypi.org/project/pytest-regressions/
-BuildRequires:	python3-modules >= 1:3.6
+BuildRequires:	python3-modules >= 1:3.9
 BuildRequires:	python3-setuptools
 BuildRequires:	python3-setuptools_scm
 %if %{with tests}
 BuildRequires:	python3-PyYAML
 BuildRequires:	python3-matplotlib
+BuildRequires:	python3-numpy
 BuildRequires:	python3-pandas
 BuildRequires:	python3-pillow
+# TODO
+#BuildRequires:	python3-pyarrow
 BuildRequires:	python3-pytest >= 6.2.0
 BuildRequires:	python3-pytest-datadir >= 1.2.0
 %endif
@@ -31,7 +34,7 @@ BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	python3-sphinx_rtd_theme
 BuildRequires:	sphinx-pdg-3
 %endif
-Requires:	python3-modules >= 1:3.6
+Requires:	python3-modules >= 1:3.9
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
